@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- boxicon icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- custom styles -->
+        <link rel="stylesheet" href="./src/style.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <!-- logo -->
+            <a href="#" class="logo"><span>A</span> H</a>
+            <!-- boxicon  bar-menu icon -->
+            <i class='bx bx-menu-alt-left' onclick="openMenu()"></i>
+            <!-- navbar -->
+            <nav class="navbar" id="sideMenu">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <!-- boxicon close-menu icon -->
+                <i class='bx bx-x' onclick="closeMenu()"></i>
+            </nav>            
+        </header>
+        
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <!-- Video Background -->
+                <video autoplay muted loop class="video-background">
+                    <source src="./public/paintvideo.mp4" type="video/mp4" />
+                </video>
+                <!-- Small Title -->
+                <h3>Antonio<span> Herrera</span></h3>
+                <!-- Main Title -->
+                <h1>Developer <br /><span>&</span> Freelancer</h1>
+                <!-- Main Text -->
+                <p>I create fast, responsive, and user-friendly websites that bring your ideas to life.</p>
+                <!-- CTA Button -->
+                <div class="btn-box">
+                    <a href="#services">
+                        <button class="btn-1">LEARN MORE</button>
+                    </a>
+                </div>
+            </div>
+                <!--Portrait Image  -->
+            <div class="img-box">
+                <img src="./public/portrate1.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- services section -->
+        <section class="services" id="services">
+            <!-- Services Title -->
+            <h2 class="heading">
+                I'm <span>Good at</span>
+            </h2>
+            <!-- Cards start here -->
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-desktop'></i>
+                    <h3>Web Development</h3>
+                    <p>
+                        I can build your site from the ground up or enhance what you already have—always customized to your needs, goals, and audience.
+                    </p>
+                </div>
+                <!-- Card #2 -->
+                <div class="services-box">
+                    <i class='bx bx-devices'></i>
+                    <h3>Responsive Design</h3>
+                    <p>  With responsive layout, your website will remain fully accessible and user-friendly across all devices, screen sizes, and browsing environments.</p> 
+                </div>
+                <!-- Card #3 -->
+                <div class="services-box">
+                    <i class='bx bx-cog'></i>
+                    <h3>Web Maintenance</h3>
+                    <p>To ensure your website runs smoothly, updates, bug fixes, performance optimization, and continuous monitoring is included.</p>          
+                </div>
+                <!-- Card #4 -->
+                <div class="services-box">
+                    <i class='bx bx-search-alt-2' ></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Be found when it matters most—clean code and intuitive navigation help attract more visitors and improve search engine visibility. </p>
+                </div>
+                <!-- Card #5 -->
+                <div class="services-box">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Custom Code</h3>
+                    <p>I can customize your site with HTML, CSS, and JavaScript—or add backend integration for enhanced functionality and performance.</p>
+                </div>
+            </div>
+            <!-- End of page-service paragrapth -->
+            <div class="services-text">
+                <p>
+                    Timely delivery is guaranteed-your website will be launched exactly when you need it.
+                </p>
+            </div>
+        </section>
+
+        <!-- projects section -->
+        <section class="projects" id="projects">
+            <!-- Projects Title -->
+            <h2 class="heading">Recent <span>Projects</span></h2>
+            <!-- Projects card #1 -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="./public/e-portal-i5.jpeg" alt="" />
+                    <div class="layer">
+                        <h3>e-Portal.ca</h3>
+                        <p>Made with WordPress</p>
+                        <a href="https://www.e-portal.ca/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div> 
+                <!-- Projects card #2 -->
+                <div class="work">
+                    <img src="./public/ahportfolio2.png" alt="" />
+                    <div class="layer">
+                        <h3>WEb Developer Portfolio</h3>
+                        <p>Build HTML-CSS-JavaScript</p>
+                        <a href="https://employeeovertimeapi.web.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <!-- Projects card #3 -->
+                <div class="work">
+                    <img src="./public/webdebblog2.png" alt="" />
+                    <div class="layer">
+                        <h3>WebDevBlog</h3>
+                        <p>Made with React.js</p>
+                        <a href="https://aherrerablog.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div> 
+                <!-- Projects card #4 -->
+                <div class="work">
+                    <img src="./public/api2.png" alt="" />
+                    <div class="layer">
+                        <h3>24/7 API</h3>
+                        <p>Built with Python Django REST framework</p>
+                        <a href="https://websting.pythonanywhere.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div> 
+                <!-- Projects card #5 -->
+                <div class="work">
+                    <img src="./public/employee-ot.jpeg" alt="" />
+                    <div class="layer">
+                        <h3>Employee Overtime</h3>
+                        <p>Built with Vue.js</p>
+                        <a href="https://employeeovertimeapi.web.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div> 
+                <!-- Projects card #6 -->
+                <div class="work">
+                    <img src="./public/lhportfolio.png" alt="" />
+                    <div class="layer">
+                        <h3>Pianist Template</h3>
+                        <p>Made with HTML-CSS-JavaScript</p>
+                        <a href="https://employeeovertimeapi.web.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div> 
+            </div>
+            <!-- End of projects paragraph -->
+            <div class="projects-text">
+                <p>Please click on the circled link to open a live view of my projects.</p>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section class="contact" id="contact">
+            <!-- Contact Title -->
+            <h1 class="sub-title">Reach<span> Out</span></h1>
+            <!-- Contact Left Row-->
+            <div class="container">
+                <div class="row">
+                    <!-- Media Social Icons -->
+                    <div class="contact-left">
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/ant0nio.herrera/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                            <a href="https://github.com/websting" target="_blank"><i class='bx bxl-github'></i></a>
+                            <a href="https://codepen.io/aherrera001" target="_blank"><i class='bx bxl-codepen' ></i></a>
+                            <a href="#"><i class='bx bxs-user' ></i></a>
+                        </div>  
+                    </div>
+                    <!-- contact form -->
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="John Doe" required>
+                            <input type="text" name="Email" placeholder="you@youremail.com" required>
+                            <textarea name="Message" id="" rows="6" placeholder="Enter Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <!-- Google Sheets Message -->
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- footer section-->
+            <div class="copyright">
+                <hr />
+                <p>&copy; 2025 Antonio Herrera.  All rights reserved. <br />
+                      Made with HTML-CSS-JavaScript.<br />
+                    by: AH @ <a href="#"> simpleDesigns.com</a></p>
+                <!--  activate href below and add path for file to download -->
+                <!-- <a href="#" download class="btn btn2">Download CV</a> -->
+            </div>
+        </section>
+
+
+        <!-- custom scripts -->
+        <script src="./src/script.js" async defer></script>
+        <!-- Boxicons -->
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </body>
+</html>
+
