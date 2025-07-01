@@ -4,23 +4,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio Template</title>
+        <title>HML-CSS Template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- boxicon icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <!-- custom styles -->
+        <!-- custom styles sheet -->
         <link rel="stylesheet" href="./src/style.css">
     </head>
+    
     <body>
         <!-- Header Section -->
         <header>
             <!-- logo -->
-            <a href="#" class="logo"><span>A</span> H</a>
-            <!-- boxicon  bar-menu icon -->
+            <a href="#" class="logo"><span>Z</span> S</a>
+            <!-- boxicon  bars-menu icon -->
             <i class='bx bx-menu-alt-left' onclick="openMenu()"></i>
             <!-- navbar -->
-            <nav class="navbar" id="sideMenu">
+            <nav class="navbar" id="sideMenu" onclick="closeMenu()">
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
@@ -30,15 +31,15 @@
             </nav>            
         </header>
         
-        <!-- Home Section -->
+        <!-- Home Section (hero section) -->
         <section class="home" id="home">
             <div class="home-content">
                 <!-- Video Background -->
                 <video autoplay muted loop class="video-background">
-                    <source src="./public/paintvideo.mp4" type="video/mp4" />
+                    <source src="/paintvideo.mp4" type="video/mp4" />
                 </video>
                 <!-- Small Title -->
-                <h3>Antonio<span> Herrera</span></h3>
+                <h3>Zoe<span> Stephan</span></h3>
                 <!-- Main Title -->
                 <h1>Developer <br /><span>&</span> Freelancer</h1>
                 <!-- Main Text -->
@@ -52,7 +53,7 @@
             </div>
                 <!--Portrait Image  -->
             <div class="img-box">
-                <img src="./public/portrate1.jpg" alt="">
+                <img src="/smilegirl.png" alt="">
             </div>
         </section>
 
@@ -62,38 +63,39 @@
             <h2 class="heading">
                 I'm <span>Good at</span>
             </h2>
-            <!-- Cards start here -->
+            <!-- Cards start here X5 -->
+             <!-- Card #1 -->
             <div class="services-container">
                 <div class="services-box">
                     <i class='bx bx-desktop'></i>
                     <h3>Web Development</h3>
                     <p>
-                        I can build your site from the ground up or enhance what you already have—always customized to your needs, goals, and audience.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.
                     </p>
                 </div>
                 <!-- Card #2 -->
                 <div class="services-box">
                     <i class='bx bx-devices'></i>
                     <h3>Responsive Design</h3>
-                    <p>  With responsive layout, your website will remain fully accessible and user-friendly across all devices, screen sizes, and browsing environments.</p> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloribus.</p> 
                 </div>
                 <!-- Card #3 -->
                 <div class="services-box">
                     <i class='bx bx-cog'></i>
                     <h3>Web Maintenance</h3>
-                    <p>To ensure your website runs smoothly, updates, bug fixes, performance optimization, and continuous monitoring is included.</p>          
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, tenetur.</p>          
                 </div>
                 <!-- Card #4 -->
                 <div class="services-box">
                     <i class='bx bx-search-alt-2' ></i>
                     <h3>SEO Optimization</h3>
-                    <p>Be found when it matters most—clean code and intuitive navigation help attract more visitors and improve search engine visibility. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quidem!</p>
                 </div>
                 <!-- Card #5 -->
                 <div class="services-box">
                     <i class='bx bx-code-alt' ></i>
                     <h3>Custom Code</h3>
-                    <p>I can customize your site with HTML, CSS, and JavaScript—or add backend integration for enhanced functionality and performance.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, dolores!</p>
                 </div>
             </div>
             <!-- End of page-service paragrapth -->
@@ -104,94 +106,96 @@
             </div>
         </section>
 
-        <!-- projects section -->
+        <!-- Projects Section -->
         <section class="projects" id="projects">
             <!-- Projects Title -->
             <h2 class="heading">Recent <span>Projects</span></h2>
-            <!-- Projects card #1 -->
+            <!-- Project Cards Start here -->
             <div class="work-list">
+                <!-- Projects Card #1 -->
                 <div class="work">
-                    <img src="./public/e-portal-i5.jpeg" alt="" />
+                    <img src="/phone.jpg" alt="" />
                     <div class="layer">
-                        <h3>e-Portal.ca</h3>
-                        <p>Made with WordPress</p>
-                        <a href="https://www.e-portal.ca/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <h3>Website 1</h3>
+                        <p>WordPress</p>
+                        <a href="https://unsplash.com/" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div> 
                 <!-- Projects card #2 -->
                 <div class="work">
-                    <img src="./public/ahportfolio2.png" alt="" />
+                    <img src="/watch.jpg" alt="" />
                     <div class="layer">
-                        <h3>WEb Developer Portfolio</h3>
-                        <p>Build HTML-CSS-JavaScript</p>
-                        <a href="https://employeeovertimeapi.web.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <h3>Website 2</h3>
+                        <p>HTML-CSS-JavaScript</p>
+                        <a href="https://unsplash.com/" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
                 <!-- Projects card #3 -->
                 <div class="work">
-                    <img src="./public/webdebblog2.png" alt="" />
+                    <img src="/makeup.jpg" alt="" />
                     <div class="layer">
-                        <h3>WebDevBlog</h3>
-                        <p>Made with React.js</p>
-                        <a href="https://aherrerablog.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <h3>Website 3</h3>
+                        <p>React.js</p>
+                        <a href="https://unsplash.com/" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div> 
                 <!-- Projects card #4 -->
                 <div class="work">
-                    <img src="./public/api2.png" alt="" />
+                    <img src="/books.jpg" alt="" />
                     <div class="layer">
-                        <h3>24/7 API</h3>
-                        <p>Built with Python Django REST framework</p>
-                        <a href="https://websting.pythonanywhere.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <h3>Website 4</h3>
+                        <p>Python Django REST Framework</p>
+                        <a href="https://unsplash.com/" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div> 
                 <!-- Projects card #5 -->
                 <div class="work">
-                    <img src="./public/employee-ot.jpeg" alt="" />
+                    <img src="/camera.jpg" alt="" />
                     <div class="layer">
-                        <h3>Employee Overtime</h3>
-                        <p>Built with Vue.js</p>
-                        <a href="https://employeeovertimeapi.web.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <h3>Website 5</h3>
+                        <p>Vue.js</p>
+                        <a href="https://unsplash.com/" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div> 
                 <!-- Projects card #6 -->
                 <div class="work">
-                    <img src="./public/lhportfolio.png" alt="" />
+                    <img src="/pens.jpg" alt="" />
                     <div class="layer">
-                        <h3>Pianist Template</h3>
-                        <p>Made with HTML-CSS-JavaScript</p>
-                        <a href="https://employeeovertimeapi.web.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <h3>Website 6</h3>
+                        <p>HTML-CSS-JavaScript</p>
+                        <a href="https://unsplash.com/" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div> 
             </div>
             <!-- End of projects paragraph -->
             <div class="projects-text">
-                <p>Please click on the circled link to open a live view of my projects.</p>
+                <p>Click arrow link for website live preview.</p>
             </div>
         </section>
 
-        <!-- contact section -->
+        <!-- Contact Section -->
         <section class="contact" id="contact">
             <!-- Contact Title -->
             <h1 class="sub-title">Reach<span> Out</span></h1>
-            <!-- Contact Left Row-->
+            <!-- Contact Left-->
             <div class="container">
                 <div class="row">
-                    <!-- Media Social Icons -->
+                    <!-- Social Media Icons -->
                     <div class="contact-left">
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/ant0nio.herrera/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                            <a href="https://github.com/websting" target="_blank"><i class='bx bxl-github'></i></a>
-                            <a href="https://codepen.io/aherrera001" target="_blank"><i class='bx bxl-codepen' ></i></a>
-                            <a href="#"><i class='bx bxs-user' ></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                            <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+                            <a href="https://codepen.io/" target="_blank"><i class='bx bxl-codepen' ></i></a>
+                            <a href="You@yourwebsite.com"><i class='bx bxs-user' ></i></a>
                         </div>  
                     </div>
-                    <!-- contact form -->
+                    <!-- Contact Right (form inputs) -->
                     <div class="contact-right">
+                        <!-- Submissions to Google Sheets -->
                         <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="John Doe" required>
-                            <input type="text" name="Email" placeholder="you@youremail.com" required>
-                            <textarea name="Message" id="" rows="6" placeholder="Enter Message"></textarea>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Email" required>
+                            <textarea name="Message" id="" rows="6" placeholder="Write Message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
                         <!-- Google Sheets Message -->
@@ -202,7 +206,7 @@
             <!-- footer section-->
             <div class="copyright">
                 <hr />
-                <p>&copy; 2025 Antonio Herrera.  All rights reserved. <br />
+                <p>&copy; 2025 All rights reserved. <br />
                       Made with HTML-CSS-JavaScript.<br />
                     by: AH @ <a href="#"> simpleDesigns.com</a></p>
                 <!--  activate href below and add path for file to download -->
@@ -210,44 +214,10 @@
             </div>
         </section>
 
-
         <!-- custom scripts -->
         <script src="./src/script.js" async defer></script>
         <!-- Boxicons -->
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-        <!-- Sidebar Menu -->
-        <script>
-        const sideMenu = document.getElementById('sideMenu');
-
-        const openMenu = () => {
-        sideMenu.style.right = '0';
-    }
-
-        const closeMenu = () => {
-        sideMenu.style.right = '-200px';
-    }
-        </script>
-
-        <!-- submit to google-sheet. script code downloaded from GitHub -->
-        <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw39qILECH0O-v5at43Lq-ygY9-a1rzSqlX_Qi731dnQtvK32kh9Q3lFmllllARSsIk/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-        
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = 'Message Sent Successfully!'
-                    setTimeout(function(){
-                        msg.innerHTML = ''
-                    },5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-        </script>
     </body>
 </html>
 
