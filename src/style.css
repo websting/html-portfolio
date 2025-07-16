@@ -21,6 +21,8 @@
 html{
     font-size: 62.5%;
     overflow: auto;
+
+    
 }
 body{
     margin: auto 12%;
@@ -157,12 +159,12 @@ span{
     display: flex;
 }
 .btn-1{
-    padding: 12px 25px;
+    padding: 10px 25px;
     background-color: transparent;
     color: var(--main-color);
     border: 2px solid white;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
@@ -203,17 +205,17 @@ span{
 .services-container .services-box{
     /* grow, shrink, and basis */
     flex: 1 1 25rem;
-    background:var(--main-color);
+    /* background:var(--main-color); */
     /* top, right/left, and bottom */
-    padding: 4rem 2rem 4rem;
+    padding: 1rem;
     border-radius: 2rem;
     text-align: center;
     transition: 0.3s ease;   
 }
 /* services card zoom in */
 .services-container .services-box:hover{
-    border: 0.3rem solid var(--bg-color);
-    transform: scale(1.05);
+    border: 0.1rem solid var(--bg-color);
+    transform: scale(1.01);
 }
 /* Font Awesome Icons inside cards */
 .services-box i{
@@ -222,17 +224,19 @@ span{
 }
 .services-box h3{
     font-size: 2rem;
+    color: var(--main-color);
 }
 .services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-    color: #000;
+    color: #fff;
     text-align: center;
 }
 .services-text p{
     text-align: center;
     margin-top: 6rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color:lightgray;
 }
 
 /* ----------------------projects styles---------------------*/
@@ -316,7 +320,8 @@ span{
 .projects-text p{
     text-align: center;
     margin-top: 6rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color:lightgray;
 }
 
 /* ------------------contact left---------------------------*/
@@ -370,12 +375,13 @@ span{
     transform: translateY(-5px);
 }
 .btn.btn2{
-    padding: 12px 25px;
+    padding: 10px 25px;
+    margin-left: 10px;
     background-color: transparent;
     color: var(--main-color);
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
@@ -383,8 +389,8 @@ span{
 }
 .btn.btn2:hover{
     background-color: transparent;
-    color: var(--text-color);
-    border: 2px solid var(--main-color);
+    color: var(--bg-color);
+    border: 1px solid var(--main-color);
     filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7));
 }
 /* Form */
@@ -426,6 +432,7 @@ hr {
     font-weight: 500;
     margin-top: 20px;
     font-style: italic;
+    color: lightgray;
 }
 .copyright p{
     font-size: 13px;
@@ -484,7 +491,7 @@ hr {
         /* makes smooth transition of sidebar */
         transition: right 0.5s;
         /* blur for transparent background */
-        background-color: #747a67f1;
+        background-color: #747a67ca;
         backdrop-filter: blur(10%);
         z-index: 2000;
         /* text-align: right; */
@@ -528,12 +535,33 @@ hr {
     .contact-left p {
         margin-left: -25px;
     }
+    /* Learn More button */
+    .btn-1{
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+    /* Download CV button */
+    .btn.btn2{
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.services-box p{
+    font-size: 1.3rem;
+}
+
+/* Submit button */
     form .btn.btn2{
         margin-top: 10px;
-        width: 100%;
+        width: 90%;
         padding: 7px 18px;
         font-size: 12px;
     }
+
     .social-icons{
     margin-left: 0;
 }
