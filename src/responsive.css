@@ -1,0 +1,180 @@
+/* Responsive CSS */
+/* -----------------------Media Q-------------------------- */
+
+/* 1324px or less */
+@media (max-width: 1324px) {
+  .heading {
+    font-size: 3rem;
+  }
+  /* close bars menu */
+  .navbar .bx {
+    display: block;
+    color: #fff;
+    font-size: 35px;
+  }
+  .navbar .bx:hover {
+    /* background: transparent; */
+    /* color: white; */
+    transform: scale(1.5);
+    /* makes it smooth */
+    transition: transform 0.3s ease;
+    /* border-radius: 50%; */
+  }
+  /* side bars menu */
+  header .bx {
+    display: block;
+    font-size: 35px;
+    margin-right: 1.5em;
+  }
+  .navbar {
+    position: fixed;
+    top: 0px;
+    /* hide the side menu */
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    /* makes smooth transition of sidebar */
+    transition: right 0.5s;
+    /* blur for transparent background */
+    background-color: #747a67ca;
+    backdrop-filter: blur(10%);
+    z-index: 2000;
+    /* text-align: right; */
+  }
+  .navbar a {
+    display: block;
+    margin: 50px;
+    color: #000;
+  }
+  .navbar .bx {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin-left: 1em;
+  }
+  .home {
+    padding-left: 15%;
+  }
+  .home-content h3 {
+    padding-left: 10%;
+    font-size: 20px;
+  }
+  .home-content h1 {
+    padding-left: 10%;
+    font-size: 55px;
+    line-height: 1.2;
+  }
+  .home-content p {
+    padding-left: 10%;
+    margin: 15px 0 30px;
+  }
+  .btn-box {
+    padding-left: 10%;
+  }
+  .sub-title {
+    font-size: 3rem;
+  }
+  .contact-left p {
+    margin-left: -25px;
+  }
+  /* Learn More button */
+  .btn-1 {
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  /* Download CV button */
+  .btn.btn2 {
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+  }
+
+  .services-box p {
+    font-size: 1.3rem;
+  }
+
+  .projects .work-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Submit button */
+  form .btn.btn2 {
+    margin-top: 10px;
+    width: 90%;
+    padding: 7px 18px;
+    font-size: 12px;
+  }
+
+  .social-icons {
+    margin-left: 0;
+  }
+  .social-icons a {
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    color: var(--bg-color);
+    font-size: 30px;
+    /* to help with transition below */
+    transition: transform 0.5s;
+  }
+}
+
+/* 924px or less */
+@media (max-width: 924px) {
+  /* home portrate image */
+  .img-box img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4%;
+  }
+  .home {
+    padding-left: 8%;
+  }
+  .projects .work-list {
+    grid-template-columns: 1fr;
+  }
+  
+}
+/* 500px or less */
+@media (max-width: 500px) {
+  .img-box img {
+    display: none;
+  }
+  .home {
+    padding-left: 25%;
+  }
+  
+}

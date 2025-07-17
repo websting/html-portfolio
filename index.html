@@ -7,22 +7,24 @@
         <title>HML-CSS Template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <!-- boxicon icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <!-- custom styles sheet -->
-        <link rel="stylesheet" href="./src/style.css">
+        
     </head>
 
     <body>
         <!-- Header Section -->
         <header>
             <!-- logo -->
-            <a href="#" class="logo"><span>Z</span> S</a>
+            <a href="#" class="logo"><span>J</span> D</a>
             <!-- boxicon  bars-menu icon -->
             <i class='bx bx-menu-alt-left' onclick="openMenu()"></i>
             <!-- navbar -->
             <nav class="navbar" id="sideMenu" onclick="closeMenu()">
                 <a href="#home">Home</a>
+                <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -39,7 +41,7 @@
                     <source src="/paintvideo.mp4" type="video/mp4" />
                 </video>
                 <!-- Small Title -->
-                <h3>Zoe<span> Stephan</span></h3>
+                <h3>Jane<span> Doe</span></h3>
                 <!-- Main Title -->
                 <h1>Developer <br /><span>&</span> Freelancer</h1>
                 <!-- Main Text -->
@@ -58,6 +60,31 @@
                 <img src="/smilegirl.png" alt="">
             </div>
         </section>
+
+        <!-- About section -->
+         <section class="about" id="about">
+            <!-- About Title -->
+            <h2 class="heading">
+                Little<span> About</span>
+            </h2>
+
+            <div class="container">
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="smilegirl.png" alt="Your Name" />
+        </div>
+
+        <!-- Text Section -->
+        <div class="text-section">
+            <h1>... Me</h1>
+            <p>Hello! I'm Jane, a passionate web developer with a love for creating beautiful and functional websites. I specialize in front-end development and have experience working with HTML, CSS, JavaScript, and various frameworks like React and Vue. I enjoy problem-solving and continuously learning new technologies to improve my skills.</p>
+            <p>When I'm not coding, you can find me exploring new places, reading books, or experimenting with photography. I'm always looking for new opportunities to collaborate and create impactful solutions.</p>
+
+            <!-- CV Button -->
+            <a href="#" download class="btn btn2 id='down-cv" >DOWNLOAD CV</a>
+        </div>
+    </div>
+         </section>
 
         <!-- services section -->
         <section class="services" id="services">
