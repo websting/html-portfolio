@@ -210,11 +210,12 @@ span{
     padding: 1rem;
     border-radius: 2rem;
     text-align: center;
+    border: 0.2rem solid transparent;
     transition: 0.3s ease;   
 }
 /* services card zoom in */
 .services-container .services-box:hover{
-    border: 0.1rem solid var(--bg-color);
+    border: 0.2rem solid var(--bg-color);
     transform: scale(1.01);
 }
 /* Font Awesome Icons inside cards */
@@ -249,20 +250,26 @@ span{
     font-size: 6rem;
     /* text-align: center; */
 }
-.work-list{
+.projects .work-list{
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 50px;   
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items:stretch;
+    margin-top: 20px;   
 }
 .work{
-    border-radius: 10px;
     position: relative;
-    overflow: hidden; 
+    width: 100%; /* Cards take full width within their grid cell */
+    max-width: none; /* limit the size of cards */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
 }
 .work img{
     width: 100%;
-    height: 300px;
+    height: auto;
     border: 5px solid white;
     border-radius: 10px;
     display: block;
@@ -276,7 +283,7 @@ span{
     /* hide layer */
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #8ed024);
-    border-radius: 10px;
+    border-radius: 5px;
     /* moves layer on top of img */
     position: absolute;
     left: 0;
@@ -554,6 +561,10 @@ hr {
     font-size: 1.3rem;
 }
 
+.projects .work-list{
+    grid-template-columns: repeat(2,1fr);
+}
+
 /* Submit button */
     form .btn.btn2{
         margin-top: 10px;
@@ -594,6 +605,9 @@ hr {
 .home{
         padding-left: 8%;
     }
+    .projects .work-list{
+    grid-template-columns: 1fr;
+}
 }
 /* 500px or less */
     @media(max-width: 500px) {
