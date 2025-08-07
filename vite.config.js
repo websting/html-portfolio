@@ -10,5 +10,7 @@ export default defineConfig({
   server: {
     port: 5173, // local dev server port (optional)
     open: true, // open browser automatically
-  }
+  },
+  base: './',  // Tells Vite to generate relative paths for CSS, JS, etc.., in the dist/ folder
+              // Base path for all assets and links in Vite when building for production.
 })
