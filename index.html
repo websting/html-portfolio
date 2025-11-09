@@ -18,7 +18,7 @@
         <!-- Header Section -->
         <header>
             <!-- logo -->
-            <a href="#" class="logo"><span>J</span> D</a>
+            <a href="#" class="logo"><span>HT</span>ML</a>
             <!-- boxicon  bars-menu icon -->
             <i class='bx bx-menu-alt-left' onclick="openMenu()"></i>
             <!-- navbar -->
@@ -45,19 +45,30 @@
                 <!-- Main Title -->
                 <h1>Developer <br /><span>&</span> Freelancer</h1>
                 <!-- Main Text -->
-                <p>I create fast, responsive, and user-friendly websites that bring your ideas to life.</p>
+                <p class="hero-text">
+        I build modern, responsive, and user-friendly websites using
+        <span class="tech">HTML</span>, <span class="tech">CSS</span>, and <span class="tech">JavaScript</span>.
+      </p>
                 <!-- CTA Button -->
                 <div class="btn-box">
-                    <a href="#services">
-                        <button class="btn-1">LEARN MORE</button>
+                    <a href="#projects">
+                        <button class="btn-1">View My Work</button></a>
                         <!-- CV Button -->
+                    <a href="#contact">
+                        <button class="btn btn2">Hire Me Today</button></a>
+                        
                         <!-- <a href="#" download class="btn btn2" >DOWNLOAD CV</a> -->
-                    </a>
                 </div>
             </div>
                 <!--Portrait Image  -->
             <div class="img-box">
-                <img src="/smilegirl.png" alt="">
+                <img src="/smilegirl.png" alt="Developer Picture" />
+
+                <!-- Scroll button -->
+                <div class="scroll-down">
+                <span>Scroll</span>
+                <i class="arrow"></i>
+            </div>
             </div>
         </section>
 
@@ -76,9 +87,19 @@
 
         <!-- Text Section -->
         <div class="text-section">
-            <h1>... Me</h1>
+            <h1>... <span>Me</span></h1>
             <p>Hello! I'm Jane, a passionate web developer with a love for creating beautiful and functional websites. I specialize in front-end development and have experience working with HTML, CSS, JavaScript, and various frameworks like React and Vue. I enjoy problem-solving and continuously learning new technologies to improve my skills.</p>
-            <p>When I'm not coding, you can find me exploring new places, reading books, or experimenting with photography. I'm always looking for new opportunities to collaborate and create impactful solutions.</p>
+            <div class="about-bottom">
+        <div class="about-skills">
+          <h3 class="skills-title">Skills & Tools</h3>
+          <ul class="skills-list">
+            <li>💻 HTML5 / CSS3 / JS</li>
+            <li>⚛️ React / Vue / Next.js</li>
+            <li>🎨 UI/UX Design Basics</li>
+            <li>🧠 REST APIs & JSON</li>
+            <li>🚀 Git / GitHub / Netlify</li>
+          </ul>
+        </div>
 
             <!-- CV Button -->
             <a href="#" download class="btn btn2 id='down-cv" >DOWNLOAD CV</a>
@@ -95,7 +116,7 @@
             <!-- Cards start here X5 -->
              <!-- Card #1 -->
             <div class="services-container">
-                <div class="services-box">
+                <div class="services-box" data-number="01">
                     <i class='bx bx-desktop'></i>
                     <h3>Web Development</h3>
                     <p>
@@ -103,27 +124,27 @@
                     </p>
                 </div>
                 <!-- Card #2 -->
-                <div class="services-box">
-                    <i class='bx bx-devices'></i>
+                <div class="services-box" data-number="02">
+                    <i class='bx bx-devices' ></i>
                     <h3>Responsive Design</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.
 
                 </div>
                 <!-- Card #3 -->
-                <div class="services-box">
+                <div class="services-box" data-number="03">
                     <i class='bx bx-cog'></i>
                     <h3>Web Maintenance</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.</p>          
                 </div>
                 <!-- Card #4 -->
-                <div class="services-box">
+                <div class="services-box" data-number="04">
                     <i class='bx bx-search-alt-2' ></i>
                     <h3>SEO Optimization</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.
 </p>
                 </div>
                 <!-- Card #5 -->
-                <div class="services-box">
+                <div class="services-box" data-number="5">
                     <i class='bx bx-code-alt' ></i>
                     <h3>Custom Code</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, impedit.</p>
@@ -131,9 +152,7 @@
             </div>
             <!-- End of page-service paragrapth -->
             <div class="services-text">
-                <p>
-                    Timely delivery is guaranteed
-                </p>
+                <p>Delivering high-quality results — on time, every time.</p>
             </div>
         </section>
 
