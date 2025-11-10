@@ -16,7 +16,6 @@ A modern, responsive HTML/CSS/JavaScript starter template built with [Vite](http
 ## 📁 What's Included
 
 DevKit/
-├── dist/ # Production-ready files
 ├── public/ # Static assets (images, icons, etc.)
 ├── src/ # Source code (HTML, JS, CSS)
 ├── index.html # Main HTML file
@@ -39,7 +38,6 @@ Make sure you have **Node.js** and **npm** installed:
    npm install
 4. Start the development server:
     npm run dev
-5. Optional: Right click index.html in dist folder.  Choose open with live server fo instant  production preview.
 
 ### ⚙️ Customization
 
@@ -59,7 +57,7 @@ By default, it uses Google Sheets as a backend. Replace the URL in the script wi
 
 ### 🚀 Deploying
 Optional: Create a production-ready build:
-npm run build
+Run:  npm run build
 This will generate optimized files in the dist/ folder.
 
 ### 👍 Credits
